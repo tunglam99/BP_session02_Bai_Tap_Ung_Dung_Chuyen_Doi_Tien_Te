@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form>
+        <label> Amount</label> <br>
+        <input  type = "number" id = "sotien" value=""/> <br>
+
+        <label>From Currency </label>
+        <select>
+            <option label="Viet Nam"></option>
+        </select>
+        <br>
+        <label>To Currency </label>
+        <select>
+            <option label="USD"></option>
+        </select> <br>
+        <label> Result</label>
+        <p id = "result">
+        </p> <br>
+        <button type = "button" onclick="doitien()"> Convert</button>
+    </form>
+    <script>
+        function doitien(){
+            let number = document.getElementById("sotien").value;
+            let ketqua = number/23000;
+            document.getElementById("result").innerText = ketqua + "$";
+        }
+    </script>
+</body>
+</html>
